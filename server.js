@@ -6,6 +6,7 @@ const logger = require('morgan');
 require('dotenv').config();
 // connecting
 require('./config/database');
+const ensureLoggedIn = require('./config/ensureLoggedIn');
 
 const app = express()
 const PORT = process.env.PORT || 3001;
@@ -20,6 +21,10 @@ app.use(express.static(path.join(__dirname, 'build')))         // 2 underscores 
 
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
+
+// Protect the API routes below from anonymous users
+app.use('/api/items', ensureLoggedIn, require('./routes/api/items'));
+app.use('/api/orders', ensureLoggedIn, require('./routes/api/orders'));
 
 app.use(express.static(path.join(__dirname, 'build')));
 
