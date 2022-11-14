@@ -2,7 +2,7 @@ const express = require('express')
 const morgan = require('morgan')
 const favicon = require('serve-favicon')
 const path = require('path')
-const logger = require('morgan');
+
 require('dotenv').config();
 // connecting
 require('./config/database');
@@ -18,19 +18,20 @@ app.use(favicon(path.join(__dirname, 'build', 'favicon.ico'))) // 2 underscores 
 app.use(express.static(path.join(__dirname, 'build')))         // 2 underscores in the __dirname
 
 
+// Middleware to verify token and assign user object of payload to req.user.
+// Be sure to mount before routes
+app.use(require('./config/checkToken'));
 
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
 
 // Protect the API routes below from anonymous users
-app.use('/api/items', ensureLoggedIn, require('./routes/api/items'));
-app.use('/api/orders', ensureLoggedIn, require('./routes/api/orders'));
+app.use('/api/items',  require('./routes/api/items'));
+app.use('/api/orders', require('./routes/api/orders'));
 
-app.use(express.static(path.join(__dirname, 'build')));
 
-// Middleware to verify token and assign user object of payload to req.user.
-// Be sure to mount before routes
-app.use(require('./config/checkToken'));
+
+
 
 
 
