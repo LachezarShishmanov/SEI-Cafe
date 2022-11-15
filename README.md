@@ -34,50 +34,50 @@ App Breakdown
    6. src/
        components/
         CategoryList/
-          CategoryList.jsx
+          CategoryList.js
           CategoryList.module.css
         LineItem/
-          LineItem.jsx
+          LineItem.js
           LineItem.module.css
         LoginForm/
-          LoginForm.jsx
+          LoginForm.js
           LoginForm.module.css
         Logo/
-          Logo.jsx
+          Logo.js
           Logo.module.css
         MenuList/
-          MenuList.jsx
+          MenuList.js
           MenuList.module.css
         MenuListItem/
-          MenuListItem.jsx
+          MenuListItem.js
           MenuListItem.module.css
         OrderDetail/
-          OrderDetail.jsx
+          OrderDetail.js
           OrderDetail.module.css
         OrderList/
-          OrderList.jsx
+          OrderList.js
           OrderList.module.css
         OrderListItem/
-          OrderListItem.jsx
+          OrderListItem.js
           OrderListItem.module.css
         SignUpForm/
-          SignUpForm.jsx
+          SignUpForm.js
           SignUpForm.module.css
         UserLogOut/
-          UserLogOut.jsx
+          UserLogOut.js
           UserLogOut.module.css
         pages/
           App/
-           App.jsx
+           App.js
            App.module.css
        AuthPage/
-           App.jsx
+           App.js
            App.module.css
        NewOrderPage/
-           NewOrderPage.jsx
+           NewOrderPage.js
            NewOrderPage.module.css
        OrderHistoryPage/
-           OrderHistoryPage.jsx
+           OrderHistoryPage.js
            OrderHistoryPage.module.css
       utilities/
          items-api.js
