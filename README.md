@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+Project Name SEI-Cafe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This was a project I had to do for my Software engineering bootcamp. It took me a week to build it. It was challenging but I'm happy I was able to build all the functionalities I wanted. Its deployed to Herokou
 
-## Available Scripts
+App Breakdown
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. config/
+         checkToken.js
+         database.js
+         ensureLoggedIn.js
+ 2. controllers/
+      api/
+         items.js
+         orders.js
+         users.js
+ 3. models/
+         category.js
+         item.js
+         itemSchema.js
+         order.js
+         user.js
+         readme.md
+  4. public/
+         favicon.ico
+         index.html
+         logo*.png
+         manifest.json
+         robots.txt
+   5. routes/
+        api/
+          items.js
+          orders.js
+          users.js
+   6. src/
+       components/
+        CategoryList/
+          CategoryList.jsx
+          CategoryList.module.css
+        LineItem/
+          LineItem.jsx
+          LineItem.module.css
+        LoginForm/
+          LoginForm.jsx
+          LoginForm.module.css
+        Logo/
+          Logo.jsx
+          Logo.module.css
+        MenuList/
+          MenuList.jsx
+          MenuList.module.css
+        MenuListItem/
+          MenuListItem.jsx
+          MenuListItem.module.css
+        OrderDetail/
+          OrderDetail.jsx
+          OrderDetail.module.css
+        OrderList/
+          OrderList.jsx
+          OrderList.module.css
+        OrderListItem/
+          OrderListItem.jsx
+          OrderListItem.module.css
+        SignUpForm/
+          SignUpForm.jsx
+          SignUpForm.module.css
+        UserLogOut/
+          UserLogOut.jsx
+          UserLogOut.module.css
+        pages/
+          App/
+           App.jsx
+           App.module.css
+       AuthPage/
+           App.jsx
+           App.module.css
+       NewOrderPage/
+           NewOrderPage.jsx
+           NewOrderPage.module.css
+       OrderHistoryPage/
+           OrderHistoryPage.jsx
+           OrderHistoryPage.module.css
+      utilities/
+         items-api.js
+         order-api.js
+         send-request.js
+         users-api.js
+         users-service.js
+     index.css
+     index.js
+7. .gitignore
+8. README.md
+9. server.js
